@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Compile'){
             setps{
-                sh 'mnv clean compile'
+                echo 'This is working'
             }    
         }
     }
