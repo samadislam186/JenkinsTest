@@ -4,8 +4,7 @@ pipeline{
         stage('Compile'){
             setps{
                 sh 'mnv clean compile'
-            }
-            
+            }    
         }
     }
 }
