@@ -1,8 +1,9 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('Compile'){
-            setps{
+
+    stages {
+        stage('Compile') {
+            setps {
                 echo 'This is working'
             }    
         }
