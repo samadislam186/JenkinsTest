@@ -5,6 +5,7 @@ pipeline{
             setps{
                 sh 'mnv clean compile'
             }
+            
         }
     }
 }
