@@ -18,6 +18,8 @@ pipeline {
 		}
 		stage('copy to server'){
 			steps {
+				sh "ansiblep-playbook allProdSegment.yml --check"
+				sh "if [stdin.out != fail]"
 				sh "ansiblep-playbook allProdSegment.yml"
 			}
 		}
