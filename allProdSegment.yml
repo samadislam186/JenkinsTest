@@ -1,0 +1,14 @@
+--- 
+- 
+  hosts: PROD
+  ignore_errors: true
+  ignore_unreachabe: true
+  name: "Copy files between servers"
+  task: 
+    - 
+      chmod: 775
+      copy: ~
+      dest: /opt/scoket/hosts
+      group: webadmin
+      source: /tmp/file/
+      user: app
