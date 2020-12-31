@@ -18,7 +18,8 @@ pipeline {
 		}
 		stage('copy to server'){
 			steps {
-				sh "ansiblep-playbook allProdSegment.yml"
+				sh "ansible -m /etc/ansible/hosts ping"
+				sh "ansible-playbook allProdSegment.yml"
 			}
 		}
 	}
