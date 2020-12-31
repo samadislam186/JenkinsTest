@@ -24,5 +24,10 @@ pipeline {
 				sh "ansible-playbook allProdSegment.yml"
 			}
 		}
+		stage('Start testing'){
+			steps {
+				sh "chmod 777 test.sh;sh test.sh"
+			}
+		}
 	}
 }
