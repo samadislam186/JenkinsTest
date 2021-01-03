@@ -14,6 +14,6 @@ const server = app.listen((port) => {
 	console.out(`server is not running on port {$port}`);
 	}
 	else{
-		console.out(`server started`);
+		console.log(`server started`);
 	}
 }
